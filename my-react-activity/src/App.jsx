@@ -16,9 +16,10 @@ function App() {
         </div>
         <div className="flex flex-wrap justify-center gap-3">
           <button className={buttonStyle} onClick={() => setCount(count + 1)}>Click Me</button>
+          <button className={buttonStyle} onClick={() => setCount(count - 1)}>Decrease</button>
           <button className="rounded-lg border border-indigo-700 bg-white px-6 py-3.5 text-indigo-700 hover:bg-indigo-50 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-500" onClick={() => setCount(0)}>Reset</button>
         </div>
-        <p className="mt-6 text-sm text-slate-600">Click to add 1. Reset to start again.</p>
+        <p className="mt-6 text-sm text-slate-600">Add or subtract 1. Reset to start again.</p>
       </main>
     </div>
   );
